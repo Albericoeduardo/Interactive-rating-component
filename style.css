@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Bg-Color: hsl(215, 10%, 24%);
+}
+body{
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 410px;
+    height: 410px;
+    margin-top: 200px;
+    background-color: var(--Dark-Blue);
+    border-radius: 20px;
+}
+.close-container{
+    display: none;
+}
+.star{
+    position: relative;
+    top: 30px;
+    left: 30px;
+    background-color: var(--Medium-Grey);
+    padding: 10px;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+.tittle{
+    position: relative;
+    top: 60px;
+    left: 30px;
+    font-family: 'Overpass';
+    font-weight: 700;
+    color: var(--White);
+}
+.info{
+    position: relative;
+    top: 80px;
+    left: 30px;
+    width: 350px;
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--Light-Grey);
+    line-height: 1.5;
+}
+.container div button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    color: var(--White);
+    background-color: var(--Medium-Grey);
+    opacity: 0.5;
+    border: none;
+    cursor: pointer;
+}
+.container div button:hover{
+    background-color: var(--Orange);
+    color: var(--White);
+    opacity: 1;
+}
+.container div button:focus{
+    background-color: var(--Light-Grey);
+    color: var(--White);
+    opacity: 1;
+}
+    
+.item-1{
+    position: relative;
+    top: 110px;
+    left: 30px;
+}
+
+.item-2{
+    position: relative;
+    top: 60px;
+    left: 100px;
+}
+
+.item-3{
+    position: relative;
+    top: 10px;
+    left: 170px;
+}
+
+.item-4{
+    position: relative;
+    top: -40px;
+    left: 240px;
+}
+.item-5{
+    position: relative;
+    top: -90px;
+    left: 310px;
+}
+
+.container input{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 30px;
+    top: -60px;
+    width: 82%;
+    height: 40px;
+    background-color: var(--Orange);
+    font-family: 'Overpass';
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--White);
+    border: none;
+    border-radius: 20px;
+}
+.container input:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+.modal-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 410px;
+    height: 390px;
+    margin-top: 10px;
+    background-color: var(--Dark-Blue);
+    border-radius: 20px;
+    gap: 20px;
+    padding: 30px;
+    opacity: 0;
+    pointer-events: none;
+}
+.your-rate{
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 15px;
+    background-color: var(--Bg-Color);
+    color: var(--Orange);
+    padding: 5px 20px;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+.modal-container h1{
+    font-family: 'Overpass',;
+    font-weight: 700;
+    color: var(--White);
+}
+.modal-container p{
+    font-family: 'Overpass';
+    font-weight: 400;
+    color: var(--Light-Grey);
+    text-align: center;
+}
+.modal-show{
+    opacity: 1;
+    pointer-events: unset;
+    transform: translateY(190px);
+}
+@media (max-width: 400px) {
+    .container{
+        width: 375px;
+        margin-right: 12px;
+    }
+    .modal-container{
+        width: 375px;
+        margin-right: 12px;
+    }
+}

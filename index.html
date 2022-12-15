@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(0, 0%, 100%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="star-container">
+      <img src="images/icon-star.svg" alt="" class="star">
+    </div>
+    <h1 class="tittle">How did we do?</h1>
+    <p class="info">Please let us know how we did with your support request. All feedback is apreciated to help us improve our offering!</p>
+      <div class="rate">
+        <button class="item-1 btn">1</button>
+        <button class="item-2 btn">2</button>
+        <button class="item-3 btn">3</button>
+        <button class="item-4 btn">4</button>
+        <button class="item-5 btn">5</button>
+      </div>
+    <input type="button" value="S U B M I T" class="open-modal">
+  </div>
+  <div class="modal">
+    <div class="modal-container">
+    <img src="images/illustration-thank-you.svg" alt="">
+    <p class="your-rate">You selected <span id="rating">5</span> out of 5</p>
+    <h1>Thank You!</h1>
+    <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>    
+    </div>
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
